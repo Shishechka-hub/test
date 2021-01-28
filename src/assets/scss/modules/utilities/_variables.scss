@@ -1,0 +1,31 @@
+// Img_url
+$imgUrl: '/img/';
+
+// Breakpoints
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+// Colors
+$textColorBlack: #000;
+$textColorGray: #333;
+$textColorGray2: #4F4F4F;
+$linkColor: #208AC9;
+$whiteColor: #fff;
+
+%center {
+	position:relative;
+	max-width: 1636px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+%stretch {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}

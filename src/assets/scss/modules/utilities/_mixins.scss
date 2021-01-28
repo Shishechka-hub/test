@@ -1,0 +1,30 @@
+@mixin font-face($font-name, $font-path, $font-weight: 400, $font-style: normal) {
+	@font-face {
+		font-family: $font-name;
+		src: url('#{$font-path}.woff2') format('woff2'), 
+		url('#{$font-path}.woff')  format('woff'), 
+		url('#{$font-path}.ttf')  format('truetype');
+		font-weight: $font-weight;
+		font-style: $font-style;
+	}
+}
+
+
+@mixin imageWebp($path, $expansion) {
+	background: {
+		image: url($imgUrl + 'webp/#{$path}.webp');
+	}
+	html.noWebp & {
+		background: {
+			image: url($imgUrl + '#{$path}.#{$expansion}');
+		}
+	}
+}
+
+
+@mixin placeholder($font-size, $color, $font-family, $opacity: 1) {
+	&::-webkit-input-placeholder {font-size:$font-size; color: $color; opacity:$opacity; font-family: '#{$font-family}';}
+	&::-moz-placeholder          {font-size:$font-size; color: $color; opacity:$opacity; font-family: '#{$font-family}';}
+	&:-moz-placeholder           {font-size:$font-size; color: $color; opacity:$opacity; font-family: '#{$font-family}';}
+	&:-ms-input-placeholder      {font-size:$font-size; color: $color; opacity:$opacity; font-family: '#{$font-family}';}
+}

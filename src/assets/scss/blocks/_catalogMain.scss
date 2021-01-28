@@ -1,0 +1,89 @@
+.sectionCatalog {
+    @extend %center;
+    margin-top: 49px;
+    padding-bottom: 29px;
+
+    &__title {
+        font: {
+            family: "Montserrat";
+            size: 36px;
+            weight: 700;
+        }
+        line-height: 44px;
+        text-align: center;
+    }
+
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    &__item {
+        max-width: 706px;
+        width: 100%;
+        border: 1px solid #CEE2F1;
+        border-radius: 15px;
+        padding: 21px {
+            top: 16px;
+        }
+        margin: 0 34px {
+            bottom: 106px;
+        }
+    }
+
+    &__par {
+        font: {
+            family: "Montserrat";
+            size: 24px;
+            weight: 700;
+        }
+        line-height: 29px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration-line: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 36px;
+    }
+
+    &__img {
+        width: 290px;
+        height: 228px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 80px;
+        margin-top: -2px;
+    }
+
+    &__link {
+        display: inline-flex;
+        font: {
+            family: "Montserrat";
+            size: 14px;
+            weight: 700;
+        }
+        line-height: 17px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        &:not(:first-child) {
+            margin-top: 17px;
+        }
+
+        &:hover {
+            text-decoration-line: none;
+        }
+    }
+}

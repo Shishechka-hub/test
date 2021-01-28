@@ -1,0 +1,21 @@
+.footer {
+   
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @extend %center;
+        max-width: 1240px;
+        padding: {
+            top: 28px;
+            bottom: 82px;
+        }
+        font: {
+            family: "Montserrat";
+            size: 11px;
+            weight: 400;
+        }
+        line-height: 13px;
+        color: #4F4F4F;
+    }
+
+}
