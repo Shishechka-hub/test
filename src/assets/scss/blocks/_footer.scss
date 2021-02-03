@@ -18,4 +18,10 @@
         color: #4F4F4F;
     }
 
+
+    &__copyright:last-child {
+        @media screen and (max-width: $sm) {
+            text-align: right;
+        }
+    }
 }

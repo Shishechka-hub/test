@@ -34,7 +34,7 @@
         <header class="header">
             <div class="header__content">
                 <div class="logo">
-                    <a href="/">
+                    <a class="logo__img" href="/">
                         <img src="/img/logo.png" alt="">
                     </a>
                     <span class="logo__text">МеталлСтройМаркет</span> 
@@ -49,17 +49,21 @@
                     ПН-ПТ с 08:00 до 18:00
                 </div>
                 <div class="header__tel telHeader">
-                    <div class="telHeader__text">тел.: (8212) <span>243-343, 240-123</span></div>
+                    <div class="telHeader__text">тел.: (8212) <span>243-343<i>,</i> 240-123</span></div>
                     <a href="#" class="telHeader__link">Перезвоните мне</a>
                 </div>
             </div>
             <div class="header__bottom">
                 <div class="header__content">
+                    <div class="header__toggleMobile">
+                        <span></span>
+                    </div>
                     <nav class="header__menu">
                         <ul class="menuHeader">
                             <li class="menuHeader__item menuHeader__item_dropdown">
                                 <a href="" class="menuHeader__link">каталог</a>
                                 <div class="dropdownHeader">
+                                    <div class="dropdownHeader__prevMobile">Назад</div>
                                     <div class="dropdownHeader__envelope">
                                         <div class="dropdownHeader__wrap">
                                             <div class="dropdownHeader__item dropdownHeader__item_dropdown">

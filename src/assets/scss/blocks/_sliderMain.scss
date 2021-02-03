@@ -2,6 +2,11 @@
     @extend %center;
     max-width: 1606px;
     margin-top: 22px;
+    transition: .3s;
+
+    @media screen and (max-width: $md-max) {
+        margin-top: 0;
+    }
 
     &__slick {
         margin: 0px -15px;
@@ -11,6 +16,14 @@
         max-height: 545px;
         border-radius: 16px;
         overflow: hidden;
+
+        @media screen and (max-width: $xxl) {
+            border-radius: 0px;
+        }
+
+        @media screen and (max-width: $sm) {
+            height: 400px;
+        }
     }
     
 }
@@ -19,6 +32,11 @@
     display: flex;
     justify-content: center;
     margin-top: 28px;
+    transition: .3s;
+
+    @media screen and (max-width: $lg-min) {
+        margin-top: 14px;
+    }
 
     li {
         margin: 0 5px;
