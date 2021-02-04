@@ -4,6 +4,10 @@ body {
 		weight: 400;
 	}
 	color: $textColorBlack;
+
+	&.body_overflow {
+		overflow: hidden;
+	}
 }
 .wrapper {
 	overflow: hidden;

@@ -55,7 +55,7 @@
             </div>
             <div class="header__bottom">
                 <div class="header__content">
-                    <div class="header__toggleMobile">
+                    <div class="header__toggleMobile toggleHeader_js">
                         <span></span>
                     </div>
                     <nav class="header__menu">
@@ -394,6 +394,20 @@
                                 <a href="" class="menuHeader__link">Контакты</a>
                             </li>
                         </ul>
+                        <div class="header__infoMobile">
+                            <div class="addressMobile">
+                                <div class="addressMobile__text">Сыктывкар, Сысольское шоссе, 31/8</div>
+                                <a href="#map" class="addressMobile__link scrollTo_js">схема проезда</a>
+                            </div>
+                            <div class="timeMobile">
+                                Режим работы:
+                                <br>
+                                ПН-ПТ с 08:00 до 18:00
+                            </div>
+                            <div class="telMobile">
+                                <div class="telMobile__text">тел.: (8212) <span>243-343, 240-123</span></div>
+                            </div>
+                        </div>
                     </nav>
                     <div class="header__search">
                         <form action="" class="searchHeader">

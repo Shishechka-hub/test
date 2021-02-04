@@ -16,6 +16,10 @@
         }
         line-height: 13px;
         color: #4F4F4F;
+
+        @media screen and (max-width: $sm) {
+            padding-bottom: 40px;   
+        }
     }
 
 
