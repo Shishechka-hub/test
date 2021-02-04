@@ -447,6 +447,10 @@
     font-size: 16px;
     line-height: 19px;
 
+    @media screen and (min-width: $sm) {
+        display: none;
+    }
+
     &__text {
         span {
             font-size: 20px;
