@@ -23,9 +23,15 @@
     }
 
 
-    &__copyright:last-child {
+    &__copyright {
+        &:last-child {
+            @media screen and (max-width: $sm) {
+                text-align: right;
+            }
+        }
+
         @media screen and (max-width: $sm) {
-            text-align: right;
+            width: 150px;
         }
     }
 }

@@ -228,7 +228,7 @@
         }
     }
 
-    &__basket {
+    &__card {
        margin-right: 77px;
        transition: .3s;
 
@@ -268,10 +268,15 @@
                 z-index: 10;
                 min-height: calc(100vh - 155px);
                 max-height: calc(100vh - 155px);
+                overflow-x: scroll;
     
                 @media screen and (max-width: $sm) {
                     min-height: calc(100vh - 130px);
                     max-height: calc(100vh - 130px);
+                }
+
+                &_hidden {
+                    overflow: hidden;
                 }
             }
     
@@ -330,6 +335,7 @@
                 background: #fff;
                 min-height: calc(100vh - 155px);
                 max-height: calc(100vh - 155px);
+                overflow-x: scroll;
                 z-index: 20;
                 transition: .3s;
 
@@ -372,7 +378,14 @@
                     }
                 }
 
+                &__wrap {
+                    &:last-child {
+                        margin-bottom: 80px;
+                    }
+                }
+
                 &__item {
+                   
                     &_dropdown {
                         & > .dropdownHeader__link {
                             &:after {
@@ -419,7 +432,8 @@
                     background: #fff;
                     min-height: calc(100vh - 155px);
                     max-height: calc(100vh - 155px);
-                    z-index: 20;
+                    overflow-x: scroll;
+                    z-index: 30;
                     transition: .3s;
 
                     @media screen and (max-width: $sm) {
@@ -542,6 +556,10 @@
     }
     transition: .3s;
 
+    @media screen and (min-width: $sm) {
+        margin-bottom: 100px;
+    }
+
     &:before {
         content:" ";
         width: 24px;
@@ -563,6 +581,7 @@
     }
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 100px;
 
     @media screen and (min-width: $sm) {
         display: none;
@@ -631,6 +650,7 @@
         @media screen and (max-width: $sm) {
             font-size: 0;
             margin-top: 0;
+            margin-right: -10px;
         }
 
         &:before {
@@ -894,7 +914,7 @@
     }
 }
 
-.basketHeader {
+.cardHeader {
     display: flex;
     align-items: center;
     font: {
@@ -916,7 +936,7 @@
         @media screen and (max-width: $md-max) {
             margin-right: 0;
         }
-        svg {
+        img {
             display: block;
 
             @media screen and (max-width: $md-max) {

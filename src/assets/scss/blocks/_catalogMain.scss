@@ -40,15 +40,21 @@
         @media screen and (max-width: $md) {
             flex-direction: column;
             justify-content: flex-start;
-            padding: 0 15px;
+            padding: 0 15px {
+                bottom:30px;
+            }
         }
 
         @media screen and (max-width: $sm) {
-            padding: 0 30px;
+            padding: 0 30px {
+                bottom:30px;
+            }
         }
 
         @media screen and (max-width: $sm-min) {
-            padding: 0px;
+            padding: 0 {
+                bottom:30px;
+            }
         }
     }
 
@@ -82,6 +88,12 @@
             width: 100%;
             margin: {
                 bottom: 60px;
+            }
+        }
+
+        @media screen and (max-width: $sm-min) {
+            margin: {
+                bottom: 40px;
             }
         }
 

@@ -427,11 +427,11 @@
                             </button>
                         </form>
                     </div>
-                    <div class="header__basket basketHeader">
-                        <div class="basketHeader__icon">
-                            <?include $_SERVER['DOCUMENT_ROOT'] . '/img/svg/basket_iHeader.svg';?>
+                    <div class="header__card cardHeader">
+                        <div class="cardHeader__icon">
+                            <img src="/img/svg/basket_iHeader.svg" alt="">
                         </div>
-                        <a class="basketHeader__link" href="#">Корзина</a>  
+                        <a class="cardHeader__link" href="#">Корзина</a>  
                     </div>
                 </div>
             </div>

@@ -19,6 +19,7 @@ export function toggleHeader() {
             $("body").removeClass("body_overflow");
             $(".dropdownHeader").removeClass("dropdownHeader_active");
             $(".dropdownHeader__sublevel").removeClass("dropdownHeader__sublevel_active");
+            $(".header__menu").removeClass("header__menu_hidden");
         } 
     });
     
@@ -30,10 +31,12 @@ export function toggleHeader() {
         $(".linkMobile_js").on('click', function(e){
             e.preventDefault();
             $(this).siblings(".dropdownHeader").addClass("dropdownHeader_active");
+            $(".header__menu").addClass("header__menu_hidden");
         });
 
         $(".prevMobileMenu_js").on('click', function(){
             $(this).parent(".dropdownHeader").removeClass("dropdownHeader_active");
+            $(".header__menu").removeClass("header__menu_hidden");
         });
 
         $(".linkDownMobile_js").on('click', function(){
