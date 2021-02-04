@@ -12,6 +12,38 @@ export function toggleHeader() {
             body.classList.toggle("body_overflow");
         });
     }
+
+    $(document).on('click', function(event){
+		if (!$(event.target).closest(".header__toggleMobile, .header__menu").length) {
+            $(".header").removeClass("header_menuOpen");
+            $("body").removeClass("body_overflow");
+            $(".dropdownHeader").removeClass("dropdownHeader_active");
+            $(".dropdownHeader__sublevel").removeClass("dropdownHeader__sublevel_active");
+        } 
+    });
+    
+    if ($(window).width() < '960') {
+        $(window).on('load', windowSize960);
+    }
+
+    function windowSize960(){
+        $(".linkMobile_js").on('click', function(e){
+            e.preventDefault();
+            $(this).siblings(".dropdownHeader").addClass("dropdownHeader_active");
+        });
+
+        $(".prevMobileMenu_js").on('click', function(){
+            $(this).parent(".dropdownHeader").removeClass("dropdownHeader_active");
+        });
+
+        $(".linkDownMobile_js").on('click', function(){
+            $(this).siblings(".dropdownHeader__sublevel").addClass("dropdownHeader__sublevel_active");
+        });
+
+        $(".prevMobilePrev_js").on('click', function(){
+            $(this).parent(".dropdownHeader__sublevel").removeClass("dropdownHeader__sublevel_active");
+        });
+    }
 }
 
 // searchHeader

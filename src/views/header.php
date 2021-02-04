@@ -61,18 +61,20 @@
                     <nav class="header__menu">
                         <ul class="menuHeader">
                             <li class="menuHeader__item menuHeader__item_dropdown">
-                                <a href="" class="menuHeader__link">каталог</a>
+                                <a href="" class="menuHeader__link linkMobile_js">каталог</a>
                                 <div class="dropdownHeader">
-                                    <div class="dropdownHeader__prevMobile">Назад</div>
+                                    <div class="dropdownHeader__prevMobile prevMobileMenu_js">Меню</div>
                                     <div class="dropdownHeader__envelope">
                                         <div class="dropdownHeader__wrap">
                                             <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                <a href="#" class="dropdownHeader__link">Металлопрокат</a>
+                                                <a href="#" class="dropdownHeader__link linkDownMobile_js">Металлопрокат</a>
                                                 <div class="dropdownHeader__sublevel">
+                                                    <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                     <div class="dropdownHeader__wrap">
                                                         <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                            <a href="#" class="dropdownHeader__link">Металлопрокат 1</a>
+                                                            <a href="#" class="dropdownHeader__link linkDownMobile_js">Металлопрокат 1</a>
                                                             <div class="dropdownHeader__sublevel">
+                                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                                 <div class="dropdownHeader__wrap">
                                                                     <div class="dropdownHeader__item">
                                                                         <a href="#" class="dropdownHeader__link">Металлопрокат 11</a>
@@ -132,8 +134,9 @@
                                                     </div>
                                                     <div class="dropdownHeader__wrap">
                                                         <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                            <a href="#" class="dropdownHeader__link">Металлопрокат 2</a>
+                                                            <a href="#" class="dropdownHeader__link linkDownMobile_js">Металлопрокат 2</a>
                                                             <div class="dropdownHeader__sublevel">
+                                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                                 <div class="dropdownHeader__wrap">
                                                                     <div class="dropdownHeader__item">
                                                                         <a href="#" class="dropdownHeader__link">Металлопрокат 22</a>
@@ -166,8 +169,9 @@
                                                     </div>
                                                     <div class="dropdownHeader__wrap">
                                                         <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                            <a href="#" class="dropdownHeader__link">Металлопрокат 3</a>
+                                                            <a href="#" class="dropdownHeader__link linkDownMobile_js">Металлопрокат 3</a>
                                                             <div class="dropdownHeader__sublevel">
+                                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                                 <div class="dropdownHeader__wrap">
                                                                     <div class="dropdownHeader__item">
                                                                         <a href="#" class="dropdownHeader__link">Металлопрокат 33</a>
@@ -257,12 +261,14 @@
                                         </div>
                                         <div class="dropdownHeader__wrap">
                                             <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                <a href="#" class="dropdownHeader__link">Кровля</a>
+                                                <a href="#" class="dropdownHeader__link linkDownMobile_js">Кровля</a>
                                                 <div class="dropdownHeader__sublevel">
+                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                 <div class="dropdownHeader__wrap">
                                                         <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                            <a href="#" class="dropdownHeader__link">Кровля 1</a>
+                                                            <a href="#" class="dropdownHeader__link linkDownMobile_js">Кровля 1</a>
                                                             <div class="dropdownHeader__sublevel">
+                                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                                 <div class="dropdownHeader__wrap">
                                                                     <div class="dropdownHeader__item">
                                                                         <a href="#" class="dropdownHeader__link">Кровля 11</a>
@@ -322,8 +328,9 @@
                                                     </div>
                                                     <div class="dropdownHeader__wrap">
                                                         <div class="dropdownHeader__item dropdownHeader__item_dropdown">
-                                                            <a href="#" class="dropdownHeader__link">Кровля 2</a>
+                                                            <a href="#" class="dropdownHeader__link linkDownMobile_js">Кровля 2</a>
                                                             <div class="dropdownHeader__sublevel">
+                                                                <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                                 <div class="dropdownHeader__wrap">
                                                                     <div class="dropdownHeader__item">
                                                                         <a href="#" class="dropdownHeader__link">Кровля 22</a>
@@ -359,8 +366,9 @@
                                         </div>
                                         <div class="dropdownHeader__wrap">
                                             <div class="dropdownHeader__item">
-                                                <a href="#" class="dropdownHeader__link">Фасад</a>
+                                                <a href="#" class="dropdownHeader__link linkDownMobile_js">Фасад</a>
                                                 <div class="dropdownHeader__sublevel">
+                                                    <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                     <div class="dropdownHeader__item">
                                                     </div>
                                                 </div>
@@ -368,8 +376,9 @@
                                         </div>
                                         <div class="dropdownHeader__wrap">
                                             <div class="dropdownHeader__item">
-                                                <a href="#" class="dropdownHeader__link">Профиль ОЦ</a>
+                                                <a href="#" class="dropdownHeader__link linkDownMobile_js">Профиль ОЦ</a>
                                                 <div class="dropdownHeader__sublevel">
+                                                    <div class="dropdownHeader__prevMobile prevMobilePrev_js">Назад</div>
                                                     <div class="dropdownHeader__item">
                                                     </div>
                                                 </div>
@@ -397,7 +406,7 @@
                         <div class="header__infoMobile">
                             <div class="addressMobile">
                                 <div class="addressMobile__text">Сыктывкар, Сысольское шоссе, 31/8</div>
-                                <a href="#map" class="addressMobile__link scrollTo_js">схема проезда</a>
+                                <a href="#map" class="addressMobile__link addressMobile_js">схема проезда</a>
                             </div>
                             <div class="timeMobile">
                                 Режим работы:

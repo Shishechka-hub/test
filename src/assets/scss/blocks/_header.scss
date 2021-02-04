@@ -264,7 +264,7 @@
     
             .menuHeader {
                 display: block;
-                border-bottom: 1px solid rgba(206, 210, 214, 0.3);
+                border-bottom: 2px solid rgba(206, 210, 214, 0.3);
     
                 &__item {
                     margin-right: 0;
@@ -311,14 +311,108 @@
     
             .dropdownHeader {
                 top: 0;
-                left: auto;
+                left: 0;
+                width: 100%;
                 right: 100%;
                 background: #fff;
+                min-height: calc(100vh - 155px);
+                max-height: calc(100vh - 155px);
+                z-index: 20;
+                transition: .3s;
+
+                @media screen and (max-width: $sm) {
+                    min-height: calc(100vh - 130px);
+                    max-height: calc(100vh - 130px);
+                }
+
                 &__prevMobile {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     padding: 0px 15px;
                     height: 60px;
+                    padding-left: 45px;
+                    border-bottom: 2px solid rgba(206, 210, 214, 0.3);
+                    cursor: pointer;
+
+                    @media screen and (max-width: $sm) {
+                        height: 50px;
+                    }
+
+                    &:before {
+                        content: "<";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 15px;
+                        line-height: 57px;
+                        font-size: 20px;
+
+                        @media screen and (max-width: $sm) {
+                            line-height: 47px;
+                        }
+                    }
+                }
+
+                &__item {
+                    &_dropdown {
+                        & > .dropdownHeader__link {
+                            &:after {
+                                content: ">";
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 15px;
+                                line-height: 60px;
+                                font-size: 20px;
+        
+                                @media screen and (max-width: $sm) {
+                                    line-height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__link {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 15px;
+                    height: 60px;
+
+                    @media screen and (max-width: $sm) {
+                        height: 50px;
+                    }
+                }
+
+                &__sublevel {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    right: 100%;
+                    background: #fff;
+                    min-height: calc(100vh - 155px);
+                    max-height: calc(100vh - 155px);
+                    z-index: 20;
+                    transition: .3s;
+
+                    @media screen and (max-width: $sm) {
+                        min-height: calc(100vh - 130px);
+                        max-height: calc(100vh - 130px);
+                    }
+
+                    &_active {
+                        display: block;
+                        right: 0;
+                    }
+                }
+
+                &_active {
+                    display: block;
+                    right: 0;
                 }
             }
         }
@@ -594,7 +688,9 @@
                     color: $linkColor; 
                 }
                 .dropdownHeader {
-                    display: block;
+                    @media screen and (min-width: $md-max) {
+                        display: block;
+                    }
                 }
             }
 

@@ -12,7 +12,7 @@ import {toggleHeader, searchHeader} from './blocks/_header.js';
 import {sliderMain} from './blocks/_sliders.js';
 
 //📁 /assets/js/blocks  _scrollTo.js
-import {scrollTo} from './blocks/_scrollTo.js';
+import {scrollTo, scrollToMobile} from './blocks/_scrollTo.js';
 
 //📁 /assets/js/blocks  _map.js
 import {map} from './blocks/_map.js';
@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // scrollTo
     scrollTo();
+
+    // scrollToMobile
+    scrollToMobile();
 
     // map
     map();
