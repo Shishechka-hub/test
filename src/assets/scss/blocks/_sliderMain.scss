@@ -24,6 +24,20 @@
         @media screen and (max-width: $sm) {
             height: 400px;
         }
+
+        .picture {
+            @media screen and (max-width: $sm) {
+                display: none;
+            }
+        }
+
+        .picture_mobile {
+            display: none;
+            height: 100%;
+            @media screen and (max-width: $sm) {
+                display: block;
+            }
+        }
     }
     
 }

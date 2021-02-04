@@ -11,6 +11,10 @@
 						<source srcset="/img/webp/trash/bannerImg1.webp" type="image/webp"/>
 						<img class="coverIe" style="object-fit: cover"  width="100%"  height="100%" src="/img/trash/bannerImg1.jpg" alt="" />
 					</picture>
+					<picture class="picture_mobile">
+						<source srcset="/img/webp/trash/bannerImg_min.webp" type="image/webp"/>
+						<img class="coverIe" style="object-fit: cover"  width="100%"  height="100%" src="/img/trash/bannerImg_min.jpg" alt="" />
+					</picture>
 				</div>
 			</div>
 			<div class="sliderMain__item">
@@ -18,6 +22,10 @@
 					<picture class="picture">
 						<source srcset="/img/webp/trash/bannerImg1.webp" type="image/webp"/>
 						<img class="coverIe" style="object-fit: cover"  width="100%"  height="100%" src="/img/trash/bannerImg1.jpg" alt="" />
+					</picture>
+					<picture class="picture_mobile">
+						<source srcset="/img/webp/trash/bannerImg_min.webp" type="image/webp"/>
+						<img class="coverIe" style="object-fit: cover"  width="100%"  height="100%" src="/img/trash/bannerImg_min.jpg" alt="" />
 					</picture>
 				</div>
 			</div>
